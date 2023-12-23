@@ -17,17 +17,13 @@
     <body>
             <h1 style="color: blue;">Sentiment-Analysis</h1>
             <form method="post", action="/analyse">
-                <label>Choose an option:</label>
-                <br>
-                <input type="radio" id="option1" name="choice" value="Sentiment-Analysis" required>
-                <label for="option1">Sentiment-Analysis</label>
-                <br>
-                <input type="radio" id="option2" name="choice" value="Emotion Detection" required>
-                <label for="option2">Emotion Detection</label>
-                <br>
-                <label for="text_input">Enter Text:</label>
-                <input  id="text_input" type="text" name="text_input" required>
-                <input type="submit">
+                Choose method to analyse sentence: <br>
+                <input type="radio" id="option1" name="choice" value="sentiment" required>
+                Sentiment-Analysis <br>
+                <input type="radio" id="option2" name="choice" value="emotion" required>
+                Emotion Detection<br>
+                Enter sentence: <input  id="text_input" type="text" name="text_input" required><br>
+                <input type="submit"value="Analyse Sentence" >
             </form>
     </body>
 </html>
